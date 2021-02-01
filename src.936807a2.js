@@ -158,4 +158,4 @@ var t=require("process");Object.defineProperty(exports,"__esModule",{value:!0}),
 },{"three":"gBK8"}],"B6dB":[function(require,module,exports) {
 "use strict";var e=require("./Map"),r=require("./World"),n=require("./MapCursor"),t=require("./Input"),a=require("./UIManager"),s=i(require("@tweenjs/tween.js"));function i(e){return e&&e.__esModule?e:{default:e}}const u="data/markers.json",o=new r.World,M=new e.Map(o.scene),d=M.initMarkers(u);d.then(()=>console.log("Markers initing was finished!"));const c=new n.MapCursor(o.scene,o.camera,M),p=new t.Input;p.setMouseMoveEventListener(c.positioning),p.setMouseClickEventListener(c.setOveredMarkerSelection);const l=()=>{requestAnimationFrame(l),s.default.update(),c.update(),a.UIManager.update(),M.animateWater(),o.render()};l();
 },{"./Map":"MvCY","./World":"U652","./MapCursor":"KGTZ","./Input":"ro2l","./UIManager":"hnSs","@tweenjs/tween.js":"dZN3"}]},{},["B6dB"], null)
-//# sourceMappingURL=/src.936807a2.js.map
+//# sourceMappingURL=/wonders-of-the-world/src.936807a2.js.map
